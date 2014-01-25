@@ -1,19 +1,14 @@
 <!doctype html>
 <html>
 <head>
-    <title>{{ page.title }}</title>
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
-
-    <!-- 1140px Grid styles for IE -->
-    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
-
-    <!-- The 1140px Grid - http://cssgrid.net/ -->
-    <link rel="stylesheet" href="/css/styles.css?time={{ site.time }}" type="text/css" />
-    <link rel="stylesheet" href="/css/github.css" type="text/css" />
-
+  <title>{{ page.title }}</title>
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/podcast.xml" />
+  <link rel="stylesheet" href="/css/styles.css?time={{ site.time }}" type="text/css" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
 </head>
 <body>
+  <div class="content">
     {{ content }}
+  </div>
 </body>
 </html>
