@@ -1,5 +1,4 @@
-name: Timothy Fitz
+name: Sytems Live
 description:
-url: http://TimothyFitz.com
-pygments: true
-permalink: /:year/:month/:day/:title/
+url: http://SystemsLive.org
+permalink: /:title

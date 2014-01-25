@@ -1,0 +1,61 @@
+---
+layout: nil
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+    <channel>
+        <title>Systems Live</title>
+        <link>http://SystemsLive.org</link>
+        <language>en</language>
+        <copyright>&#xA9; 2014 Timothy Fitz &amp; Jeff Lindsay</copyright>
+        <itunes:subtitle>Timothy Fitz and Jeff Lindsay discuss software, organizations, systems theory lifestyle design and more.</itunes:subtitle>
+        <itunes:author>Timothy Fitz &amp; Jeff Lindsay</itunes:author>
+        <itunes:keywords>
+            systems,software,thinking,education,technology,flynn,culture,society,business,agile,deployment,consulting
+        </itunes:keywords>
+        <itunes:summary>
+            Timothy Fitz and Jeff Lindsay discuss software, organizations, systems theory lifestyle design and more.
+        </itunes:summary>
+        <description>
+            Timothy Fitz and Jeff Lindsay discuss software, organizations, systems theory lifestyle design and more.
+        </description>
+
+        <itunes:owner>
+            <itunes:name>Timothy Fitz</itunes:name>
+            <itunes:email>timothyfitz@gmail.com</itunes:email>
+        </itunes:owner>
+
+        <itunes:image href="http://SystemsLive.org/images/itunes.jpg" />
+        
+        <itunes:category text="Society &amp; Culture" />
+        <itunes:category text="Technology" />
+        <itunes:category text="Business" />
+        <itunes:category text="Education" />
+
+        <itunes:new-feed-url>http://SystemsLive.org/podcast.xml</itunes:new-feed-url>
+
+        {% for post in site.posts limit:10 %}
+            <item>
+                <title>{{ post.title }}</title> 
+                <itunes:author>Timothy Fitz &amp; Jeff Lindsay</itunes:author>
+                <itunes:subtitle>Systems Live: {{ post.title }}</itunes:subtitle>
+                <itunes:summary>{{ post.excerpt | xml_escape }}</itunes:summary>
+                <itunes:image href="http://SystemsLive.org/images/itunes.jpg" />
+     
+                <enclosure url="{{ post.link }}" length="{{ post.length }}" type="audio/mpeg" />
+     
+                <guid>{{ post.link }}</guid>
+     
+                <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }} GMT</pubDate>
+     
+                <itunes:duration>{{ post.duration }}</itunes:duration>
+     
+                <itunes:keywords>
+                    systems,software,thinking,education,technology,flynn,culture,society,business,agile,deployment,consulting
+                </itunes:keywords>
+     
+            </item>
+        {% endfor %}
+    </channel>
+</rss>

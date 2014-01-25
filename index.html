@@ -1,1 +1,14 @@
-Systems Live
+---
+layout: default
+title: Systems Live
+---
+
+
+<h1>Systems Live</h1>
+
+{% for post in site.posts %}
+  <div class="post">
+    <h1><a href="{{ post.link }}">{{ post.title }}</a></h1>
+    {{ post.content }}
+  </div>
+{% endfor %}
