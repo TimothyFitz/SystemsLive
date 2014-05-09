@@ -2,3 +2,4 @@ name: Sytems Live
 description:
 url: http://SystemsLive.org
 permalink: /:title
+markdown: kramdown
