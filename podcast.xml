@@ -3,10 +3,11 @@ layout: nil
 ---
 
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xml:lang='en-US' version="2.0">
     <channel>
         <title>Systems Live</title>
         <link>http://SystemsLive.org</link>
+        <atom:link href="http://SystemsLive.org/podcast.xml" rel="self" type="application/rss+xml" />
         <language>en</language>
         <copyright>&#xA9; 2014 Timothy Fitz &amp; Jeff Lindsay</copyright>
         <itunes:subtitle>Timothy Fitz and Jeff Lindsay discuss software, organizations, systems theory lifestyle design and more.</itunes:subtitle>
@@ -14,12 +15,8 @@ layout: nil
         <itunes:keywords>
             systems,software,thinking,education,technology,flynn,culture,society,business,agile,deployment,consulting
         </itunes:keywords>
-        <itunes:summary>
-            Timothy Fitz and Jeff Lindsay discuss software, organizations, systems theory lifestyle design and more.
-        </itunes:summary>
-        <description>
-            Timothy Fitz and Jeff Lindsay discuss software, organizations, systems theory lifestyle design and more.
-        </description>
+        <itunes:summary>Timothy Fitz and Jeff Lindsay discuss software, organizations, systems theory, lifestyle design and more.</itunes:summary>
+        <description>Timothy Fitz and Jeff Lindsay discuss software, organizations, systems theory, lifestyle design and more.</description>
 
         <itunes:owner>
             <itunes:name>Timothy Fitz</itunes:name>
@@ -49,7 +46,7 @@ layout: nil
      
                 <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S" }} GMT</pubDate>
      
-                <itunes:duration>{{ post.duration }}</itunes:duration>
+                <itunes:duration>{{ post.duration | date: "%T" }}</itunes:duration>
      
                 <itunes:keywords>
                     systems,software,thinking,education,technology,flynn,culture,society,business,agile,deployment,consulting
