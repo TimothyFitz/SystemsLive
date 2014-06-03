@@ -18,6 +18,8 @@ layout: nil
         <itunes:summary>Timothy Fitz and Jeff Lindsay discuss software, organizations, systems theory, lifestyle design and more.</itunes:summary>
         <description>Timothy Fitz and Jeff Lindsay discuss software, organizations, systems theory, lifestyle design and more.</description>
 
+        <itunes:explicit>yes</itunes:explicit>
+
         <itunes:owner>
             <itunes:name>Timothy Fitz</itunes:name>
             <itunes:email>timothyfitz@gmail.com</itunes:email>
