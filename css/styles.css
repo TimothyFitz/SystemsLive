@@ -51,11 +51,12 @@ table {
 body {
   font-family: "Helvetica Neue",Arial,sans-serif;
   padding-top: 2em;
-  color: #224;
+  color: #BBBBB0;
+  background-color: #240100;
 }
 
 a {
-  color: #33A;
+  color: #FFD;
 }
 
 h2, ul {
@@ -65,16 +66,25 @@ h2, ul {
 
 /* END RESET */
 
-h1,h2 {
-  font-weight: bold;
-  margin: 0.66em 0;
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
-h1 { font-size: 32px; }
+h1,h2 {
+  font-weight: bold;
+  margin: 0.66em 0;  
+}
+
+h1 { font-size: 40px; color: white; }
 h2 { font-size: 16px; }
 
 .description {
   margin-bottom: 4em;
+  font-size: 133%;
 }
 
 .content {
@@ -95,3 +105,25 @@ h2 { font-size: 16px; }
   margin-bottom: 2em;
 }
 
+.bigimg {
+  max-width: 256px;
+  float: left;
+  margin-bottom: 1em;
+}
+
+.callout {
+  margin: 2em 1em;
+  font-size: 133%;
+}
+
+.callout .imgwrap {
+  width: 106px;
+  display: inline-block;
+  text-align: center;
+}
+
+.callout img {
+  max-height: 76px;
+  display: inline-block;
+  vertical-align: middle;
+}
