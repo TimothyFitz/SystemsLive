@@ -106,14 +106,16 @@ h2 { font-size: 16px; }
 }
 
 .bigimg {
-  max-width: 256px;
+  max-width: 300px;
   float: left;
   margin-bottom: 1em;
 }
 
-.callout {
-  margin: 2em 1em;
-  font-size: 133%;
+.callout {  
+  font-size: 100%;
+  display: inline-block;
+  margin: 0.25em;
+  margin-top: 1em;
 }
 
 .callout .imgwrap {
@@ -126,4 +128,11 @@ h2 { font-size: 16px; }
   max-height: 76px;
   display: inline-block;
   vertical-align: middle;
+}
+
+.latest {
+  font-style: italic;
+  font-size: 133%;
+  font-weight: bold;
+  color: #66665A; 
 }

@@ -9,7 +9,7 @@ title: Systems Live
 <div class="description">
 	<img class="bigimg" src="/images/itunes.jpg">
 
-	<div class="clearfix">
+	<div>
 	Systems Live is a podcast and live broadcast every Friday at 2pm CST hosted by Timothy Fitz (<a href="http://twitter.com/timothyfitz">@timothyfitz</a>) and Jeff Lindsay (<a href="http://twitter.com/progrium">@progrium</a>). Every week a different topic is covered.
 	</div>
 	<div class="callout">
@@ -23,7 +23,9 @@ title: Systems Live
 </div>
 
 
-
+<div class="latest">
+	Latest Podcast
+</div>
 {% for post in site.posts %}
   <div class="post {% if forloop.first %}first{% endif %}">
     <h2 class="title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
