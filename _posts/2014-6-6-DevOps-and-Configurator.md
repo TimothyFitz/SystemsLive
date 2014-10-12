@@ -1,5 +1,5 @@
 --- 
-title: Episode 45 - Distributed Systems
+title: Episode 45 - DevOps and Configurator
 date: 2014-6-6 14:00:00
 duration: 1:09:06
 length: 29987619
