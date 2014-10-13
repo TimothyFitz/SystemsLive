@@ -1,5 +1,5 @@
 --- 
-title: Episode 50 - Why you shouldn't do a startup
+title: Episode 50 - What Makes a Great Tech Talk
 date: 2014-10-12 12:00:00
 duration: 1:30:46
 length: 33901220
