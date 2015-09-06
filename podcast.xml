@@ -34,7 +34,7 @@ layout: nil
 
         <itunes:new-feed-url>http://SystemsLive.org/podcast.xml</itunes:new-feed-url>
 
-        {% for post in site.posts limit:10 %}
+        {% for post in site.posts %}
             <item>
                 <title>{{ post.title }}</title> 
                 <itunes:author>Timothy Fitz &amp; Jeff Lindsay</itunes:author>
